@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1FD33592892E7DB005E243A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD33582892E7DB005E243A /* AppDelegate.swift */; };
+		F1FD335B2892E7DB005E243A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD335A2892E7DB005E243A /* SceneDelegate.swift */; };
+		F1FD335D2892E7DB005E243A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD335C2892E7DB005E243A /* ViewController.swift */; };
+		F1FD33602892E7DB005E243A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FD335E2892E7DB005E243A /* Main.storyboard */; };
+		F1FD33622892E7DC005E243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FD33612892E7DC005E243A /* Assets.xcassets */; };
+		F1FD33652892E7DC005E243A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FD33632892E7DC005E243A /* LaunchScreen.storyboard */; };
+		F1FD336A2892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F1FD33692892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1FD33702892E7DC005E243A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FD336E2892E7DC005E243A /* Interface.storyboard */; };
+		F1FD33722892E7DD005E243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FD33712892E7DD005E243A /* Assets.xcassets */; };
+		F1FD33782892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F1FD33772892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F1FD337D2892E7DD005E243A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD337C2892E7DD005E243A /* InterfaceController.swift */; };
+		F1FD337F2892E7DD005E243A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD337E2892E7DD005E243A /* ExtensionDelegate.swift */; };
+		F1FD33812892E7DD005E243A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD33802892E7DD005E243A /* NotificationController.swift */; };
+		F1FD33832892E7DD005E243A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FD33822892E7DD005E243A /* ComplicationController.swift */; };
+		F1FD33852892E7DE005E243A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FD33842892E7DE005E243A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1FD336B2892E7DC005E243A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FD334D2892E7DA005E243A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FD33682892E7DC005E243A;
+			remoteInfo = "AppleWatchPeertalk WatchKit App";
+		};
+		F1FD33792892E7DD005E243A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FD334D2892E7DA005E243A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FD33762892E7DD005E243A;
+			remoteInfo = "AppleWatchPeertalk WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1FD338D2892E7DE005E243A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F1FD33782892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FD33912892E7DE005E243A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F1FD336A2892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F1FD33552892E7DB005E243A /* AppleWatchPeertalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchPeertalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FD33582892E7DB005E243A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1FD335A2892E7DB005E243A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1FD335C2892E7DB005E243A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1FD335F2892E7DB005E243A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1FD33612892E7DC005E243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FD33642892E7DC005E243A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1FD33662892E7DC005E243A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FD33692892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleWatchPeertalk WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FD336F2892E7DC005E243A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F1FD33712892E7DD005E243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FD33772892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AppleWatchPeertalk WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FD337C2892E7DD005E243A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F1FD337E2892E7DD005E243A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F1FD33802892E7DD005E243A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F1FD33822892E7DD005E243A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F1FD33842892E7DE005E243A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FD33862892E7DE005E243A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FD33872892E7DE005E243A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1FD33522892E7DB005E243A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FD33742892E7DD005E243A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1FD334C2892E7DA005E243A = {
+			isa = PBXGroup;
+			children = (
+				F1FD33572892E7DB005E243A /* AppleWatchPeertalk */,
+				F1FD336D2892E7DC005E243A /* AppleWatchPeertalk WatchKit App */,
+				F1FD337B2892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension */,
+				F1FD33562892E7DB005E243A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1FD33562892E7DB005E243A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1FD33552892E7DB005E243A /* AppleWatchPeertalk.app */,
+				F1FD33692892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app */,
+				F1FD33772892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1FD33572892E7DB005E243A /* AppleWatchPeertalk */ = {
+			isa = PBXGroup;
+			children = (
+				F1FD33582892E7DB005E243A /* AppDelegate.swift */,
+				F1FD335A2892E7DB005E243A /* SceneDelegate.swift */,
+				F1FD335C2892E7DB005E243A /* ViewController.swift */,
+				F1FD335E2892E7DB005E243A /* Main.storyboard */,
+				F1FD33612892E7DC005E243A /* Assets.xcassets */,
+				F1FD33632892E7DC005E243A /* LaunchScreen.storyboard */,
+				F1FD33662892E7DC005E243A /* Info.plist */,
+			);
+			path = AppleWatchPeertalk;
+			sourceTree = "<group>";
+		};
+		F1FD336D2892E7DC005E243A /* AppleWatchPeertalk WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F1FD336E2892E7DC005E243A /* Interface.storyboard */,
+				F1FD33712892E7DD005E243A /* Assets.xcassets */,
+			);
+			path = "AppleWatchPeertalk WatchKit App";
+			sourceTree = "<group>";
+		};
+		F1FD337B2892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F1FD337C2892E7DD005E243A /* InterfaceController.swift */,
+				F1FD337E2892E7DD005E243A /* ExtensionDelegate.swift */,
+				F1FD33802892E7DD005E243A /* NotificationController.swift */,
+				F1FD33822892E7DD005E243A /* ComplicationController.swift */,
+				F1FD33842892E7DE005E243A /* Assets.xcassets */,
+				F1FD33862892E7DE005E243A /* Info.plist */,
+				F1FD33872892E7DE005E243A /* PushNotificationPayload.apns */,
+			);
+			path = "AppleWatchPeertalk WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1FD33542892E7DB005E243A /* AppleWatchPeertalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FD33922892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk" */;
+			buildPhases = (
+				F1FD33512892E7DB005E243A /* Sources */,
+				F1FD33522892E7DB005E243A /* Frameworks */,
+				F1FD33532892E7DB005E243A /* Resources */,
+				F1FD33912892E7DE005E243A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FD336C2892E7DC005E243A /* PBXTargetDependency */,
+			);
+			name = AppleWatchPeertalk;
+			productName = AppleWatchPeertalk;
+			productReference = F1FD33552892E7DB005E243A /* AppleWatchPeertalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1FD33682892E7DC005E243A /* AppleWatchPeertalk WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FD338E2892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk WatchKit App" */;
+			buildPhases = (
+				F1FD33672892E7DC005E243A /* Resources */,
+				F1FD338D2892E7DE005E243A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FD337A2892E7DD005E243A /* PBXTargetDependency */,
+			);
+			name = "AppleWatchPeertalk WatchKit App";
+			productName = "AppleWatchPeertalk WatchKit App";
+			productReference = F1FD33692892E7DC005E243A /* AppleWatchPeertalk WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F1FD33762892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FD338A2892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk WatchKit Extension" */;
+			buildPhases = (
+				F1FD33732892E7DD005E243A /* Sources */,
+				F1FD33742892E7DD005E243A /* Frameworks */,
+				F1FD33752892E7DD005E243A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppleWatchPeertalk WatchKit Extension";
+			productName = "AppleWatchPeertalk WatchKit Extension";
+			productReference = F1FD33772892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1FD334D2892E7DA005E243A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F1FD33542892E7DB005E243A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F1FD33682892E7DC005E243A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F1FD33762892E7DD005E243A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F1FD33502892E7DA005E243A /* Build configuration list for PBXProject "AppleWatchPeertalk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1FD334C2892E7DA005E243A;
+			productRefGroup = F1FD33562892E7DB005E243A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1FD33542892E7DB005E243A /* AppleWatchPeertalk */,
+				F1FD33682892E7DC005E243A /* AppleWatchPeertalk WatchKit App */,
+				F1FD33762892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1FD33532892E7DB005E243A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FD33652892E7DC005E243A /* LaunchScreen.storyboard in Resources */,
+				F1FD33622892E7DC005E243A /* Assets.xcassets in Resources */,
+				F1FD33602892E7DB005E243A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FD33672892E7DC005E243A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FD33722892E7DD005E243A /* Assets.xcassets in Resources */,
+				F1FD33702892E7DC005E243A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FD33752892E7DD005E243A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FD33852892E7DE005E243A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1FD33512892E7DB005E243A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FD335D2892E7DB005E243A /* ViewController.swift in Sources */,
+				F1FD33592892E7DB005E243A /* AppDelegate.swift in Sources */,
+				F1FD335B2892E7DB005E243A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FD33732892E7DD005E243A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FD33812892E7DD005E243A /* NotificationController.swift in Sources */,
+				F1FD33832892E7DD005E243A /* ComplicationController.swift in Sources */,
+				F1FD337F2892E7DD005E243A /* ExtensionDelegate.swift in Sources */,
+				F1FD337D2892E7DD005E243A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1FD336C2892E7DC005E243A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FD33682892E7DC005E243A /* AppleWatchPeertalk WatchKit App */;
+			targetProxy = F1FD336B2892E7DC005E243A /* PBXContainerItemProxy */;
+		};
+		F1FD337A2892E7DD005E243A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FD33762892E7DD005E243A /* AppleWatchPeertalk WatchKit Extension */;
+			targetProxy = F1FD33792892E7DD005E243A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1FD335E2892E7DB005E243A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FD335F2892E7DB005E243A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1FD33632892E7DC005E243A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FD33642892E7DC005E243A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F1FD336E2892E7DC005E243A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FD336F2892E7DC005E243A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1FD33882892E7DE005E243A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1FD33892892E7DE005E243A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F1FD338B2892E7DE005E243A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleWatchPeertalk WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchPeertalk WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		F1FD338C2892E7DE005E243A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleWatchPeertalk WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchPeertalk WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		F1FD338F2892E7DE005E243A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AppleWatchPeertalk_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchPeertalk WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Chaiyawan.AppleWatchPeertalk;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		F1FD33902892E7DE005E243A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AppleWatchPeertalk_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchPeertalk WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Chaiyawan.AppleWatchPeertalk;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		F1FD33932892E7DE005E243A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppleWatchPeertalk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1FD33942892E7DE005E243A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJQGH9NF7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppleWatchPeertalk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chaiyawan.AppleWatchPeertalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1FD33502892E7DA005E243A /* Build configuration list for PBXProject "AppleWatchPeertalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FD33882892E7DE005E243A /* Debug */,
+				F1FD33892892E7DE005E243A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FD338A2892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FD338B2892E7DE005E243A /* Debug */,
+				F1FD338C2892E7DE005E243A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FD338E2892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FD338F2892E7DE005E243A /* Debug */,
+				F1FD33902892E7DE005E243A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FD33922892E7DE005E243A /* Build configuration list for PBXNativeTarget "AppleWatchPeertalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FD33932892E7DE005E243A /* Debug */,
+				F1FD33942892E7DE005E243A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1FD334D2892E7DA005E243A /* Project object */;
+}
