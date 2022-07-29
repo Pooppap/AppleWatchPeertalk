@@ -10,6 +10,10 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    let workoutManager = WorkoutManager()
+    let dataManager = DataManager.shared
+
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
